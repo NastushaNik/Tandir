@@ -1,0 +1,1645 @@
+@font-face { 
+  font-family: 'Helvetica';       /* название одно */ 
+  src: url('../fonts/Helvetica/HelveticaRoman.ttf'); /* разные файлы */ 
+  font-weight: 400;              /* разная плотность */ 
+  font-style: normal; 
+} 
+@font-face { 
+  font-family: 'Helvetica';       /* название одно */ 
+  src: url('../fonts/Helvetica/HelveticaMedium/HelveticaMedium.ttf'); /* разные файлы */ 
+  font-weight: 500;              /* разная плотность */ 
+  font-style: normal; 
+} 
+@font-face { 
+  font-family: 'Helvetica';       /* название одно */ 
+  src: url('../fonts/Helvetica/HelveticaBold/HelveticaBold.ttf'); /* разные файлы */ 
+  font-weight: 700;              /* разная плотность */ 
+  font-style: normal; 
+} 
+@font-face { 
+  font-family: 'Firasans';       /* название одно */ 
+  src: url('../fonts/firasans/FiraSans-SemiBold.otf'); /* разные файлы */ 
+  font-weight: 600;              /* разная плотность */ 
+  font-style: normal; 
+} 
+@font-face { 
+  font-family: 'Firasans';       /* название одно */ 
+  src: url('../fonts/firasans/FiraSans-Regular.otf'); /* разные файлы */ 
+  font-weight: 400;              /* разная плотность */ 
+  font-style: normal; 
+} 
+@font-face { 
+  font-family: 'Firasans';       /* название одно */ 
+  src: url('../fonts/firasans/FiraSans-Medium.otf'); /* разные файлы */ 
+  font-weight: 500;              /* разная плотность */ 
+  font-style: normal; 
+} 
+@font-face { 
+  font-family: 'Firasans';       /* название одно */ 
+  src: url('../fonts/firasans/FiraSans-Book.otf'); /* разные файлы */ 
+  font-weight: 300;              /* разная плотность */ 
+  font-style: normal; 
+} 
+
+.pulse{
+    // animation-name: pulse;
+    // -webkit-animation-name: pulse;  
+ 
+    // animation-duration: 1.5s;   
+    // -webkit-animation-duration: 1.5s;
+ 
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+ 
+// @keyframes pulse {
+//     0% {
+//         transform: scale(0.9);
+//         opacity: 0.7;       
+//     }
+//     50% {
+//         transform: scale(1);
+//         opacity: 1; 
+//     }   
+//     100% {
+//         transform: scale(0.9);
+//         opacity: 0.7;   
+//     }           
+// }
+ 
+// @-webkit-keyframes pulse {
+//     0% {
+//         -webkit-transform: scale(0.95);
+//         opacity: 0.7;       
+//     }
+//     50% {
+//         -webkit-transform: scale(1);
+//         opacity: 1; 
+//     }   
+//     100% {
+//         -webkit-transform: scale(0.95);
+//         opacity: 0.7;   
+//     }           
+// }
+
+body{
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  color: #191919;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Firasans'; 
+  font-weight: 500;
+  text-align: center;
+}
+
+a:hover, a:focus{ 
+  text-decoration: none !important;
+  color: #fff !important;
+ }
+
+p {
+  font-family: 'Helvetica';       /* название одно */ 
+  font-weight: 700;              /* разная плотность */ 
+  font-style: normal; 
+  color: #fff;
+}
+
+.navbar{
+  z-index: 2000;
+} 
+
+
+#headerwrap h3{
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.7em;
+  text-align: center;
+  z-index: 6;
+  color: white;
+  margin-top: 60px;
+
+}
+
+
+#headerwrap p{
+  font-size: 14px;
+    font-family: 'Firasans';
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    z-index: 20;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 25%;
+    bottom: 9%;
+    margin-left: -12.5%;
+}
+
+#headerwrap img{
+  position: absolute;
+  bottom: 4%;
+  margin-left: -16px;
+}
+
+.white-bg{
+  background: url(../image/45.png) repeat;
+  height: auto;
+  margin-top: -235px;
+  padding-top: 100px;
+}
+
+.white-bg h4{
+  color: rgb(1, 1, 1);
+  line-height: 1.2;
+  font-family: 'Firasans';       /* название одно */ 
+  font-weight: 500;              /* разная плотность */ 
+  font-style: normal; 
+  text-align: left;
+}
+
+.white-bg p{
+  color: rgb(1, 1, 1);
+  line-height: 1.2;
+  font-family: 'Firasans';       /* название одно */ 
+  font-weight: 300;              /* разная плотность */ 
+  font-style: normal;
+  margin-bottom: 50px;
+}
+
+.white-bg img{
+  max-width: 80%;
+  position: absolute;
+  top: -409px;
+}
+
+.white-bg .navbar-btn{
+  padding: 10px 100px;
+}
+
+#video-bg {
+    position: absolute;
+    min-width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+    overflow: hidden;
+    z-index: -100;
+    background: url(../image/background.jpg) no-repeat;
+         -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%; 
+    -o-background-size: 100% 100%; 
+    background-size: 100% 100%; 
+}
+ 
+#video-bg > video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    // -webkit-background-size: cover;
+    //    -moz-background-size: cover;
+    //         background-size: cover;
+    //      -o-background-size: cover;
+         -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%; 
+    -o-background-size: 100% 100%; 
+    background-size: 100% 100%; 
+}
+ 
+ @supports (object-fit: cover) {
+     #video-bg > video {
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+     }
+ }
+
+ .centered {
+  text-align: center;
+ }
+
+ a {
+  color: #FFF;
+ }
+
+ a:hover, a:focus {
+  text-decoration: none;
+  outline: 0;
+  color: #fff;
+ }
+
+.navbar-brand {
+    padding: 0 0 0 15px !important;
+}
+
+ .navbar-brand img {
+   height: 128px;
+ }
+
+ .navbar-btn {
+  font-family: 'Firasans';       
+  font-weight: 500;               
+  font-style: normal; 
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background: #ff112b;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(178,12,30,1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(178,12,30,1);
+  box-shadow: 0px 3px 0px 0px rgba(178,12,30,1);
+  color: #fff;
+  border-color: #ff112b;
+  margin-top: 75px;
+  //margin-left: 10%;
+ }
+
+ .navbar-btn:hover {
+  background: #ff112b;
+  color: #fff;
+  border-color: #ff112b;
+ }
+
+ .better{
+  font-size: 11px;
+  font-family: 'Helvetica';
+  color: rgb(254, 254, 254);
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 87px !important;
+ }
+
+ .bigtandir-title{
+  padding-left: 36px !important;
+ }
+
+ p.navbar-text.write-me.navbar-center{
+  margin-left: 10%;
+  text-align: right;
+ }
+
+ p.navbar-text.navbar-left{
+  margin-left: 15%;
+  margin-top: 84px;
+ }
+
+ .write-me, .footer-write-me{
+  font-family: 'Helvetica';       /* название одно */ 
+  font-weight: 400;              /* разная плотность */ 
+  font-style: normal; 
+  text-align: right;
+ }
+
+ .call-me, .call-me span, .footer-call-me, .footer-call-me span{
+  font-family: 'Helvetica';       /* название одно */ 
+  font-weight: 700;              /* разная плотность */ 
+  font-style: normal; 
+  color: #ff112b;
+ }
+
+ .call-me:hover, .footer-call-me:hover{
+  color: #fff;
+ }
+
+ #headerwrap{
+  //background: url(../image/bg.png) center center no-repeat;
+  text-align: center;
+  background-position: center center;
+  //min-height: 500px;
+  height: 100%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+ }
+
+ .block{
+  margin: 20px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(173,173,173,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(173,173,173,1);
+  box-shadow: 0px 0px 10px 0px rgba(173,173,173,1);
+  padding: 20px;
+ }
+
+ .block:hover{
+
+  border: 2px solid #ff112b;
+  transition: .1s linear;
+ }
+
+ .mobile-size{
+  display: none;
+ }
+
+ .block h4{
+  font-family: "FiraSans";
+  color: rgb(0, 0, 0);
+  font-weight: 500; 
+  line-height: 1.2;
+  text-align: center;
+
+ }
+button.btn:hover, button.btn:focus{
+  color: #fff;
+  outline: none;
+}
+
+.modal-title{
+  background: url(../image/modal-head.png);
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  padding: 10px 40px;
+}
+
+.modal-title h3{
+ font-family: "FiraSans";
+ font-weight: 500; 
+ color: #fff;
+}
+
+#myModal ul, #myModalMedium ul, #myModalSmall ul, #myModalShampur ul, #myModalSetka ul, #myModalPosuda ul{
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#myModal ul li, #myModalMedium ul li, #myModalSmall ul li, #myModalShampur ul li, #myModalSetka ul li{
+  width: 17%;
+  padding: 7px 15px;
+}
+
+
+#myModalPosuda ul li{
+  width: auto;
+}
+
+#myModal ul li a, #myModalMedium ul li a, #myModalSmall ul li a, #myModalShampur ul li a, 
+#myModalSetka ul li a{
+  border: 1px solid #ff112b;
+  padding: 5px 15px;
+}
+
+#myModalPosuda ul li a{
+  padding: 15px 40px;
+  border: 1px solid #ff112b;
+}
+
+
+#myModal ul li a:hover, #myModalMedium ul li a:hover, #myModalSmall ul li a:hover, 
+#myModalShampur ul li a:hover, #myModalSetka ul li a:hover, #myModalPosuda ul li a:hover{
+  background: #fff;
+}
+
+#myModal .nav-pills p, #myModalMedium .nav-pills p, #myModalSmall .nav-pills p, 
+#myModalShampur .nav-pills p, #myModalSetka .nav-pills p, #myModalPosuda .nav-pills p{
+  margin: 0;
+  text-align: center;
+  color: #ff112b;
+}
+
+ #myModal .nav-pills > li.active > a > p, #myModalMedium .nav-pills > li.active > a > p, 
+ #myModalSmall .nav-pills > li.active > a > p, #myModalShampur .nav-pills > li.active > a > p, 
+ #myModalSetka .nav-pills > li.active > a > p, #myModalPosuda .nav-pills > li.active > a > p{
+  color: #fff;
+}
+
+.item-product-wrap {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.delegate-images{
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    float: left;
+}
+
+.delegate-images img.active{
+  border: 2px solid #ff112b;
+    border-radius: 4px;
+}
+
+.item-text-wrap {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    padding: 1% 3% 1% 1%;
+}
+
+.bigPhoto{
+  width: 70%;
+  height: auto;
+  float: right;
+}
+
+.acces-Photo{
+  max-width: 100%;
+  height: auto;
+  margin-top: -80px;
+}
+
+.example-image{
+  margin: 19px 0 15px;
+  width:90%;
+  cursor:pointer; 
+  height:auto;
+}
+
+.name-item{
+  text-align: left;
+  font-family: 'Firasans'; 
+  font-weight: 600;
+}
+
+.description-item{
+  color: #aaaaaa;
+  font-family: 'Firasans'; 
+  font-weight: 300;
+  text-align: left;
+  font-size: 10px;
+}
+
+.description-komplect{
+  color: #191919;
+  font-family: 'Firasans'; 
+  font-weight: 500;
+  text-align: left;
+  font-size: 10px;
+}
+
+.price{
+  font-size: 33px;
+  color: #ff112b;
+  text-align: left;
+  font-family: 'Firasans'; 
+  font-weight: 600;      
+}
+
+.contact-form{
+  margin-top: 15px;
+  margin-right: 20px;
+  border: 4px solid #ff112b;
+  padding: 10px 5px 30px;
+}
+
+.contact-form form input[name="phone"]{
+  margin: 10px 0 20px;
+}
+
+.home-contact-form{
+  border: 4px solid #ff112b;
+  margin: 15%;
+  padding: 20px;
+}
+
+.home-contact-form p, .home-contact-form h5{
+  color: #191919;
+  font-family: 'Firasans'; 
+  font-weight: 600;
+  text-align: left;
+}
+
+.home-contact-form form input{
+  width: 100%;
+  background: #f6f6f6;
+  border: none;
+  border-bottom: 1px solid red;
+  outline: none;
+  margin: 10px 0;
+}
+
+.home-contact-form form{
+  text-align: center;
+}
+
+.contact-form h5{
+  text-align: center;
+  color: #191919;
+  font-family: 'Firasans'; 
+  font-weight: 600;
+}
+
+.contact-form p{
+  text-align: center;
+  color: #191919;
+  font-family: 'Firasans'; 
+  font-weight: 400;
+}
+
+.contact-form p{
+  font-size: 12px;
+}
+
+.contact-form form input{
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid red;
+  outline: none;
+  margin: 10px 0;
+}
+
+.navbar-btn-modal{
+  font-family: 'Firasans';       
+  font-weight: 500;               
+  font-style: normal; 
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: #ff112b !important;
+  border-radius: 5px;
+  line-height: 70px;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(178,12,30,1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(178,12,30,1);
+  box-shadow: 0px 3px 0px 0px rgba(178,12,30,1);
+  color: #fff !important;
+  border-color: #ff112b !important;
+}
+
+.navbar-btn-modal:hover {
+  background: #ff112b;
+  color: #fff;
+  border-color: #ff112b;
+ }
+
+.modal {
+  text-align: center;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#myModal1 .modal-title, #myModalMedium .modal-title, #myModalSmall .modal-title{
+  color: #fff;
+  font-family: 'Firasans';       
+  font-weight: 500;    
+}
+
+.column-contact{
+  padding: 0 !important;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+  background-color: #ff112b !important;
+}
+
+ .tovar, .dop-products, .contact{
+  background: #f6f6f6;
+  padding-bottom: 80px;
+ }
+
+ .contact p{
+  color: #191919;
+ }
+
+ .home-adress{
+   margin: 15%;
+   padding: 30px 0 0;
+ }
+
+ .home-adress h5{
+  font-size: 20px;
+  font-family: "FiraSans";
+  font-weight: 600;  
+  text-align: left; 
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+
+ .tovar h2, .preimush h4, .dop-products h2, .kak-gotovit .kak-gotovit-title{
+  font-family: 'Firasans';       /* название одно */ 
+  font-weight: 500;              /* разная плотность */ 
+  font-style: normal; 
+  text-align: center;
+  padding: 20px 0;
+ }
+
+ .preimush h4{
+  border-bottom: 2px solid #e2dfdc;
+ }
+
+ .tovar h4{
+  font-family: 'Firasans';       /* название одно */ 
+  font-weight: 600;              /* разная плотность */ 
+  font-style: normal; 
+  text-align: center;
+ }
+
+ .tovar, .dop-products, .contact{
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(133,133,133,1);
+  -moz-box-shadow: inset 0px 0px 10px 0px rgba(133,133,133,1);
+  box-shadow: inset 0px 0px 10px 0px rgba(133,133,133,1);
+ }
+
+ .preimush img{
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+ }
+
+.tovar img, .dop-products img{
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tovar p, .preimush p, .dop-products p {
+  text-align: center;
+  color: rgba(25, 25, 25, 0.75);
+  font-family: 'Firasans';       
+  font-weight: 500;  
+}
+
+.preimush{
+  background: #fff;
+}
+
+.preimush .col-lg-4.col-md-4{
+  padding: 55px 75px;
+}
+
+.kak-gotovit{
+  padding: 80px 0 55px;
+  height: auto;
+  background: url(../image/90.png) center center no-repeat;
+  -moz-background-size: 100% 100%; 
+  -webkit-background-size: 100% 100%;  
+  -o-background-size: 100% 100%; 
+  background-size: 100% 100%; 
+}
+
+.kak-gotovit .kak-gotovit-title{
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+}
+ .kak-gotovit p{
+  font-size: 15px;
+  font-family: "FiraSans";
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+ }
+
+.title {
+  overflow: hidden;
+}
+
+.title:before,
+.title:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 20%;
+  height: 3px;
+  margin: 0 10%;
+  background: #e2dfdc;
+  border-width: 0 10px;
+}
+
+.title:before {
+  margin-left: -100%;
+}
+
+.title:after {
+  margin-right: -100%;
+}
+
+.call-form-home{
+  text-align: center;
+}
+
+.karta img{
+  width: 100%;
+}
+
+footer img{
+  max-width: 100%;
+}
+
+.footer-better{
+  font-size: 12px;
+}
+
+.footer-brand{
+  position: relative;
+  bottom: 120px;
+  left: 50px;
+} 
+
+.footer-brand img{
+  height: 110px;
+}
+
+.footer-navbar-text{
+  position: relative;
+  bottom: 130px;
+  left: 50px;
+}
+
+p.navbar-text.footer-navbar-text.navbar-left.footer-navbar-left{
+  margin-left: 10%;
+} 
+
+.footer-navbar-center{
+  left: 15%;
+}
+
+.footer-navbar-right{
+  left: 0;
+}
+
+
+
+
+@media (min-width: 1680px){
+
+  .white-bg{
+    margin-top: -355px;
+    height: 460px;
+  }
+
+  #headerwrap p{
+    bottom: 14%;
+  }
+
+  #headerwrap img{
+    bottom: 10%;
+  }
+
+
+  .white-bg img{
+    top: -770px;
+    max-width: 90%;
+  }
+
+  .white-bg h4{
+    font-size: 30px;
+  }
+
+  .white-bg p{
+    font-size: 20px;
+  }
+
+  .mobile-size{
+   display: none;
+  }
+
+  .bigtandir-title{
+    padding-top: 45px;
+  }
+
+  .bigtandir-title button.btn{
+    font-size: 22px;
+  }
+
+  .navbar-brand{
+    margin-top: 15px;
+  }
+
+  .navbar-brand img {
+    height: 150px;
+    margin-right: 16px;
+}
+
+  .better{
+    font-size: 18px;
+    margin-top: 105px !important;
+  }
+
+  .write-me{
+    font-size: 22px;
+    margin-top: 92px !important;
+  }
+
+  .navbar-btn {
+    font-size: 22px;
+    padding: 15px 25px;
+  }
+
+
+  #headerwrap h3 {
+    line-height: 1.7em;
+    font-size: 36px;   
+    margin-top: 120px;
+  }
+
+  #headerwrap p{
+    font-size: 22px;
+  }
+
+  p.navbar-text.navbar-left {
+      margin-left: 15%;
+      margin-top: 105px;
+  }
+
+  .tovar h4, .dop-products h4{
+    font-size: 30px;
+  }
+
+  .tovar h2, .preimush h2, .dop-products h2, .contact h2{
+    font-size: 40px;
+  }
+
+  .kak-gotovit .kak-gotovit-title {
+    font-size: 36px;
+    line-height: 146px;
+    padding: 0;
+}
+
+  .kak-gotovit p{
+    font-size: 21px;
+  }
+
+  .preimush h4{
+    font-size: 36px;
+  }
+
+  .tovar button.btn, .dop-products button.btn{
+    padding: 10px 40px;
+    font-size: 18px;
+  }
+
+  .tovar p, .preimush p, .dop-products p{
+    font-size: 20px;
+  }
+
+  .home-adress p, .home-adress h5, .home-contact-form h5{
+    font-size: 26px;
+  }
+
+  p.contact-connect, .home-contact-form p{
+    font-size: 18px !important;
+  }
+
+  .home-contact-form {
+    margin: 15% 27% 15% 25%;
+  }
+
+  .home-contact-form form input{
+      margin: 10px 0 30px;
+  }
+
+  .call-form-home{
+    font-size: 22px !important;
+    padding: 10px 70px !important;
+  }
+
+  .kak-gotovit-text{
+    margin-bottom: 20px;
+  }
+
+  .footer-brand{
+    bottom: 156px;
+  }
+
+  .navbar-text.footer-navbar-text.navbar-left.footer-navbar-left{
+    bottom: 190px;
+  }
+
+
+  .footer-brand img {
+    height: 145px;
+  }
+
+
+
+}
+
+@media (min-width: 1366px){
+  .white-bg img {
+    top: -570px;
+    max-width: 86%;
+  }
+
+  .mobile-size{
+   display: none;
+  }
+
+  .kak-gotovit p{
+    font-size: 19px;
+  }
+
+  .home-contact-form {
+    margin: 15% 25%;
+    padding: 30px;
+}
+
+} 
+
+
+
+@media (min-width: 992px) and (max-width: 1200px){
+
+  p.navbar-text.navbar-left {
+      margin-left: 5%;
+  }
+
+  .navbar-right {
+      margin-right: 0;
+  }
+  .item-product-wrap {
+      margin-bottom: 0;
+  }
+
+   .mobile-size{
+    display: none;
+   }
+
+  .footer-brand {
+      bottom: 97px;
+  }
+
+  .footer-brand img {
+      height: 95px;
+  }
+
+  .footer-navbar-text {
+      bottom: 131px;
+      margin-bottom: 0 !important;
+  }
+
+  .footer-better{
+    bottom: 117px;
+    font-size: 11px;
+  }
+
+  p.navbar-text.footer-navbar-text.navbar-left.footer-navbar-left{
+    margin-left: 6%;
+  } 
+
+  .footer-navbar-center{
+    left: 10%;
+  }
+
+  .footer-navbar-right{
+    left: 0;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+
+  p.navbar-text.navbar-left {
+    margin-left: 5%;
+  }
+
+  .navbar-right {
+      margin-right: 0;
+  }
+
+  p.navbar-text.write-me.navbar-center{
+    display: none !important;
+  }
+
+  #headerwrap h3{
+    font-size: 20px;
+  }
+
+  #headerwrap p{
+    font-size: 12px;
+    width: 30%;
+    margin-left: -15%;
+  }
+
+  .mobile-size{
+   display: none;
+  }
+
+  .white-bg {
+    height: auto;
+  }
+
+  .white-bg img {
+   max-width: 95%;
+    top: -350px;
+  }
+
+  .white-bg .navbar-btn{
+    padding: 10px 80px;
+  }
+
+  #tovar .block, .dop-products .block{
+    margin: 20px 0;
+    padding: 10px 0;
+  }
+
+  .contact-form {
+      margin: 0 50px;
+  }
+
+  // .modal-title{
+  //   display: none;
+  // }
+
+  // #myModal ul, #myModalMedium ul, #myModalSmall ul {
+  //     margin: 5px auto 0;
+  //     display: block;
+  // }
+
+  #myModal ul li, #myModalMedium ul li, #myModalSmall ul li {
+      width: auto;
+      padding: 7px 5px;
+  }
+
+  .item-product-wrap {
+      margin-bottom: 0;
+  }
+
+  .tovar h2, .dop-products h2, .preimush .title{
+    font-size: 22px;
+  }
+
+  .preimush h4, .kak-gotovit-title{
+    font-size: 18px;
+  }
+
+  .preimush .col-lg-4.col-md-4 {
+      padding: 55px 15px;
+  }
+
+  .kak-gotovit{
+    height: auto;
+  }
+
+  .kak-gotovit .kak-gotovit-title{
+    font-size: 22px;
+    line-height: 0;
+  }
+
+  .kak-gotovit p{
+    font-size: 14px;
+  }
+
+
+  .home-adress{
+    margin: 15% 0;
+  }
+
+  .home-adress h5{
+    font-size: 18px;
+  }
+
+  .home-contact-form{
+    margin: 15%;
+    padding: 10px;
+  }
+
+  .footer-brand {
+    position: relative;
+    bottom: 90px;
+    left: 10px;
+  }
+
+  .footer-better{
+    font-size: 10px;
+    bottom: 111px !important;
+  }
+
+  .footer-navbar-text {
+    position: relative;
+    left: 10px;
+    margin-bottom: 0 !important;
+  }
+
+  .footer-navbar-left{
+    margin-left: 16% !important;
+  }
+
+  .footer-brand img {
+    height: 80px;
+    margin-top: 10px;
+  }
+
+  .footer-navbar-center{
+    float: right !important;
+    margin-right: 35px !important;
+  }
+
+  .footer-navbar-right{
+    display: none;
+  }
+
+
+}
+
+@media (min-width: 468px) and (max-width: 767.9px){
+
+  header p.navbar-text.write-me.navbar-center{
+    display: none !important;
+  }
+
+  header p.navbar-text.navbar-left, p.navbar-text.write-me.navbar-right {
+    margin-left: 25%;
+    margin-top: 0;
+    margin-bottom: -26px;
+  }
+
+  header p.navbar-text.navbar-left a.navbar-btn{
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .mobile-size{
+   display: none;
+  }
+
+  #headerwrap h3{
+    font-size: 16px;
+  }
+
+  #headerwrap p{
+    font-size: 11px;
+    width: 50%;
+    margin-left: -25%;
+    bottom: 25%;
+  }
+
+  #headerwrap img{
+    bottom: 19%;
+  }
+
+  .white-bg{
+    height: auto;
+  }
+
+  .modal:before {
+      display: inline-block;
+      vertical-align: middle;
+      content: " ";
+      height: 100%;
+    }
+   
+  .white-bg img {
+    max-width: 84%;
+    top: -247px;
+  }
+
+  .white-bg h4{
+    font-size: 16px;
+  }
+
+  .white-bg p{
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+  .white-bg .navbar-btn {
+    padding: 10px 20px;
+  }
+
+  .bigtandir-title{
+    top: -50px;
+  }
+
+  .navbar-brand img {
+    height: 85px;
+    margin-top: 5px;
+  }
+
+  .better{
+    display: none;
+  }
+
+  #myModal ul{
+    margin: 5px auto;
+    display: block;
+  }
+
+  #myModal ul li, #myModalMedium ul li, #myModalSmall ul li {
+      width: auto;
+      padding: 10px 15px;
+  }
+
+  #myModal ul li a, #myModalMedium ul li a, #myModalSmall ul li a, #myModalShampur ul li a, 
+  #myModalSetka ul li a{
+    padding: 3px 11px;
+    font-size: 11px;
+  }
+
+  .item-product-wrap{
+    margin-bottom: 10px;
+  }
+
+  .description-item {
+    font-size: 12px;
+    float: left;
+    margin-right: 47px;
+  }
+
+  .description-komplect{
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .name-item {
+    text-align: center;
+  } 
+
+  .price{
+    text-align: center;
+  }
+
+
+  .tovar h2, .dop-products h2, .preimush .title{
+    font-size: 20px;
+  }
+
+  .preimush h4, .kak-gotovit-title{
+    font-size: 16px;
+  }
+
+  .kak-gotovit{
+    height: auto;
+  }
+
+  .kak-gotovit .kak-gotovit-title{
+    font-size: 20px;
+    line-height: 0;
+    padding: 10px 0;
+  }
+
+  .kak-gotovit p{
+    font-size: 11px;
+  }
+
+  .home-adress{
+    margin: 10% 0;
+  }
+
+  .home-adress h5{
+    font-size: 14px;
+  } 
+
+  .home-adress p{
+    font-size: 12px;
+  }
+
+  .home-contact-form{
+    margin: 10% 0 10%;
+    padding: 10px;
+  }
+
+  .home-contact-form p{
+    font-size: 10px
+  } 
+
+  .home-contact-form h5{
+    font-size: 12px;
+  }
+
+  .call-form-home{
+    line-height: 40px;
+    font-size: 12px;
+    padding: 10px;
+
+  }
+
+  footer{
+    height: 85px;
+  }
+
+  footer img {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .call-footer{
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .footer-brand {
+    position: relative;
+    bottom: 85px;
+    left: 10px;
+  }
+
+  .footer-brand img {
+    height: 65px;
+    margin-top: 7px;
+}
+
+  .navbar-text.footer-navbar-text.footer-better{
+    display: none;
+  }
+
+  .navbar-text.footer-navbar-text.navbar-left.footer-navbar-left{
+    margin-left: -8% !important;
+  }
+
+  .navbar-text.footer-navbar-text.footer-write-me.navbar-right.footer-navbar-right{
+    margin-top: 0;
+    font-size: 10px;
+    display: none;
+  }
+
+  .footer-navbar-left {
+    bottom: 142px;
+    margin-left: 0%;
+    display: inline-block;
+  }
+
+  .footer-write-me{
+    bottom: 131px;
+    margin-left: 3%;
+    display: inline-block;
+  }
+
+  .footer-navbar-brand img {
+    height: 70px;
+  }
+
+
+
+}
+
+@media (max-width: 468px){
+
+  header p.navbar-text.write-me.navbar-center{
+    display: none !important;
+  }
+
+  header p.navbar-text.navbar-left{
+    margin-left: 34%;
+    margin-top: -44px;
+    margin-bottom: 10px;
+  }
+
+  p.navbar-text.write-me.navbar-right {
+    display: none;
+  }
+
+  .navbar{
+    margin-top: 10px;
+  }
+
+  header p.navbar-text.navbar-left a.navbar-btn{
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  #headerwrap h3{
+    font-size: 14px;
+  }
+
+  #headerwrap p{
+    font-size: 11px;
+    width: 50%;
+    margin-left: -25%;
+    bottom: 26%;
+  }
+
+  #headerwrap img{
+    bottom: 19%;
+  }
+
+  .white-bg img {
+    max-width: 90%;
+    top: -44px;
+  }
+
+  .white-bg p.mobile-size{
+  display: block;
+  font-size: 10px;
+  margin-bottom: 30px;
+ }
+
+ .white-bg p.btn-home{
+    display: block;
+ }
+
+  .white-bg h4{
+    font-size: 14px;
+  }
+
+  .white-bg p{
+    display: none;
+  }
+
+  .white-bg .navbar-btn {
+    padding: 10px 20px;
+  }
+
+
+  .navbar-brand img {
+    height: 65px;
+  }
+
+  .better{
+    float: right;
+    margin-right: 15px;
+    margin-top: 31px !important;
+  }
+
+  #video-bg > video{
+    display: none;
+  }
+
+  .white-bg {
+    height: auto;
+  }
+
+
+  .tovar h2, .dop-products h2, .preimush .title{
+    font-size: 18px;
+  }
+
+  .kak-gotovit p{
+    font-size: 12px;
+  }
+
+  .preimush h4, .kak-gotovit-title{
+    font-size: 14px;
+  }
+
+  .contact-form {
+    margin: 0 20px;
+  }
+
+  #myModal ul{
+    margin: 5px auto;
+    display: block;
+  }
+
+  #myModal ul li, #myModalMedium ul li, #myModalSmall ul li {
+      width: auto;
+      padding: 7px 5px;
+  }
+
+  #myModal ul li a, #myModalMedium ul li a, #myModalSmall ul li a, #myModalShampur ul li a, 
+  #myModalSetka ul li a{
+    padding: 3px 11px;
+    font-size: 11px;
+  }
+
+  #myModal ul.nav-pills li:first-child{
+    margin-left: 20px;
+  }
+
+  #myModal ul.nav-pills li.third-li{
+    margin-left: 65px;
+  }
+
+   .description-komplect{
+     font-size: 12px;
+     margin-bottom: 30px;
+   }
+
+  .item-product-wrap{
+    margin-bottom: 10px;
+  }
+
+  .description-item {
+    float: left;
+    margin-right: 17px;
+  }
+
+  .name-item {
+    text-align: center;
+  } 
+
+  .price{
+    text-align: center;
+  }
+
+  .kak-gotovit{
+    padding: 60px 0 40px;
+    height: auto;
+    background: url(../image/Background2.jpg) center center no-repeat;
+    -webkit-background-size: 100% 100%;
+       -moz-background-size: 100% 100%;
+            background-size: 100% 100%;
+         -o-background-size: 100% 100%;
+  }
+
+  .kak-gotovit .kak-gotovit-title{
+    font-size: 14px;
+    line-height: 0;
+    padding: 15px 0;
+  }
+
+  .kak-gotovit p{
+    font-size: 11px;
+  }
+
+  .home-adress{
+    margin: 10% 0;
+  }
+
+  .home-adress h5{
+    font-size: 14px;
+  } 
+
+  .home-adress p{
+    font-size: 12px;
+  }
+
+  .home-contact-form{
+    margin: 10% 0 10%;
+    padding: 10px;
+  }
+
+  .home-contact-form p{
+    font-size: 10px
+  } 
+
+  .home-contact-form h5{
+    font-size: 12px;
+  }
+
+  .call-form-home{
+    line-height: 35px;
+    font-size: 8px;
+    padding: 9px;
+  }
+
+  .btn.call-form-home{
+    font-size: 9px;
+  }
+
+  footer{
+    height: 85px;
+  }
+
+  footer img {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .call-footer{
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .footer-brand {
+    position: relative;
+    bottom: 85px;
+    left: 10px;
+  }
+
+  .footer-brand img{
+    height: 80px;
+  }
+
+  .footer-write-me{
+    display: none;
+  }
+
+  .navbar-text.footer-navbar-text.footer-better, .navbar-text.footer-navbar-text.footer-write-me.navbar-right.footer-navbar-right{
+    display: none;
+  }
+
+  p.navbar-text.footer-navbar-text.navbar-left.footer-navbar-left{
+    margin-left: -5%;
+  }
+
+  .footer-navbar-left {
+    bottom: 123px;
+    margin-left: 0%;
+    display: inline-block;
+  }
+
+  .footer-navbar-brand img {
+    height: 70px;
+  }
+
+  
+
+
+}
